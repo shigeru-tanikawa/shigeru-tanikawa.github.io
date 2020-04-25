@@ -1,0 +1,188 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="can't sign in">
+    <meta name="author" content="HorseShoeInc">
+    <title>サインインヘルプ</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/form-validation.css">
+
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+</style>
+</head>
+<!-- ========== /head ========== -->
+<!-- ========== body ========== -->
+<body>
+  <!-- ========== header ========== -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="home.html">World Map</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html#rec">今月のオススメ <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="home.html#ranking">先月の人気旅行先</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              場所を探す
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="pics.html">写真から</a>
+              <a class="dropdown-item" href="area.html#map">地図から</a>
+              <a class="dropdown-item" href="area.html#area">地域 / 国から</a>
+              <a class="dropdown-item" href="season.html">時期から</a>
+              <a class="dropdown-item" href="genre.html">ジャンルから</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" target="_blank">写真提供 / お問い合わせ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signin.html" target="_blank">サインイン</a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <!-- ========== /header ========== -->
+  <hr class="mb-4"><!--上のパディング替わり-->
+  <hr class="mb-4">
+
+  <main role="main">
+  <div class="container">
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="images/logo.jpg" alt="" width="200" height="72">
+    <h2>サインインヘルプ画面</h2><br>
+    <p class="lead"> サインイン情報をお忘れ・サインインできない場合はこちら<br>
+      ご登録いただいているメールアドレスに新たなパスワードを送信いたします．</p>
+  </div>
+
+  <hr class="mb-4">
+
+      <h4 class="mb-3">お客様の情報</h4>
+
+      <form class="needs-validation" novalidate="">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">苗字</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">名前</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-2 mb-3">
+            <label for="birthday">生年月日</label>
+            <input type="text" class="form-control" id="year" placeholder="年" required="">
+            <div class="invalid-feedback">
+              年を選択してください.
+            </div>
+          </div>
+          <div class="col-md-2 mb-3">
+            <label for="birthday">　</label>
+            <input type="text" class="form-control" id="month" placeholder="月" required="">
+            <div class="invalid-feedback">
+              年を選択してください.
+            </div>
+          </div>
+          <div class="col-md-2 mb-3">
+            <label for="birthday">　</label>
+            <input type="text" class="form-control" id="day" placeholder="日" required="">
+            <div class="invalid-feedback">
+              年を選択してください.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="age">年齢</label>
+            <input type="text" class="form-control" id="age" placeholder="半角数字" required="">
+            <div class="invalid-feedback">
+              年齢をご入力ください.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="sex">性別</label>
+            <select class="custom-select d-block w-100" id="sex" required="">
+              <option value="">性別を選択</option>
+              <option>男</option>
+              <option>女</option>
+              <option>その他</option>
+            </select>
+            <div class="invalid-feedback">
+              性別を選択してください．
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="username">ユーザーネーム</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">@</span>
+            </div>
+            <input type="text" class="form-control" id="username" placeholder="覚えている場合" required="">
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          <div class="invalid-feedback">
+            ご入力いただいたメールアドレスは登録がありません.
+          </div>
+        </div>
+
+        <button class="btn btn-primary btn-lg btn-block" type="submit">確認画面へ進む</button>
+      </form>
+
+    </div>
+</main>
+  <!-- ========== footer ========== -->
+  <hr class="m-5">
+
+  <footer class="container-md">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>© HorseShoeInc. · <a href="about.html" target="_blank">about us</a> · <a href="contact.html" target="_blank">写真提供 / お問い合わせ</a></p>
+  </footer>
+  <!-- ========== /footer ========== -->
+
+
+<script src="form-validation.js"></script>
+<script src="js/jquery-3.5.0.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
